@@ -8,7 +8,8 @@ export default function HomeScreen({navigation}) {
           <Text> Home Screen </Text> 
            <Button title="Ir para a Documentação" onPress={ () => navigation.navigate('DocList')} />
            <Button title="Ir para a Calculadora de Média" onPress={ () => navigation.navigate('CalculoMedia')} /> 
-           <Button title="Ir para Fibonacci" onPress={ () => navigation.navigate('FibonacciDisplay')} />  
+           <Button title="Ir para Fibonacci" onPress={ () => navigation.navigate('FibonacciDisplay')} /> 
+           <Button title="Ir para Galeria de Imagens" onPress={ () => navigation.navigate('ImageGallery')} />
           </View>
     );
 }

@@ -9,6 +9,7 @@ import Main from './src/components/Main';
 import Title from './src/components/title';
 import CalculoMedia from './src/components/Main';
 import FibonacciDisplay from './src/components/FibonacciDisplay';
+import ImageGallery from './src/components/ImageGallery';
 
 const Stack = createStackNavigator();
 
@@ -16,10 +17,11 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen}/>
-        <Stack.Screen name="DocList" component={DocList} />
-        <Stack.Screen name="CalculoMedia" component={CalculoMedia}/>
-        <Stack.Screen name="FibonacciDisplay" component={FibonacciDisplay}/>
+        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Home' }} />
+        <Stack.Screen name="DocList" component={DocList} options={{ title: 'Documentação React' }} />
+        <Stack.Screen name="CalculoMedia" component={CalculoMedia} options={{ title: 'Calculo de Média' }} />
+        <Stack.Screen name="FibonacciDisplay" component={FibonacciDisplay}  options={{ title: 'Fibonacci' }}/>
+        <Stack.Screen name="ImageGallery" component={ImageGallery} options={{ title: 'Galeria de Imagens' }} />
       </Stack.Navigator>
     </NavigationContainer>
      /*<View style={styles.container}>
