@@ -10,6 +10,7 @@ export default function HomeScreen({navigation}) {
            <Button title="Ir para a Calculadora de Média" onPress={ () => navigation.navigate('CalculoMedia')} /> 
            <Button title="Ir para Fibonacci" onPress={ () => navigation.navigate('FibonacciDisplay')} /> 
            <Button title="Ir para Galeria de Imagens" onPress={ () => navigation.navigate('ImageGallery')} />
+           <Button title="Ir para Lista de Filmes" onPress={ () => navigation.navigate('MovieList')} />
           </View>
     );
 }
