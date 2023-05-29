@@ -2,6 +2,9 @@ import React from 'react';
 import { View, Text } from 'react-native';
 
 const FibonacciSequence = ({ numElements }) => {
+  if (numElements <= 0) {
+    return null;
+  }
   const fibonacci = [0, 1];
   const colors = [];
   let scale = 10;

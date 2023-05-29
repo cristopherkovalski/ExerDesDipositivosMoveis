@@ -9,7 +9,7 @@ const FibonacciDisplay = () => {
     setNumElements(text);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const num = parseInt(numElements, 10);
     if (num > 0) {
       setNumElements(num);
